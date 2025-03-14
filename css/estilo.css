@@ -1,0 +1,59 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* GENERAL */
+header{
+    background-color: blueviolet;
+    text-align: center;
+    font-family: poner la de google fonts;
+    color: white;
+}
+#contenedor-contenido{
+    display: flex;
+    flex-direction: row;
+}
+#menu{
+    width: 10%;
+    background-color: brown;
+}
+#info{
+    width: 90%;
+}
+#lista-menu li{
+display: flex;
+flex-direction: row;
+list-style-type: none;
+}
+/* MÓVILES */
+@media all and (min-width:320px){
+ header{
+    padding: 1rem;
+    font-size: larger;
+}
+
+}
+
+/* PANTALLAS GRANDES */
+@media all and (min-width:1024px){
+ #abrir,#cerrar{
+    display: none;
+ }
+ #lista-menu{
+    display: block;
+    background-color: aqua;
+ }
+ #lista-menu img{
+    width: 30px;
+ }
+    #agregado{
+    display: flex;
+    flex-direction: row;
+ }
+ /* PAGINA INICIO */
+ #texto img{
+    float: left;
+ }
+}
